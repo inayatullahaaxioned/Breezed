@@ -83,7 +83,7 @@
 
         <form style="display: none;" action="#FIXME" class="searchbar">
           <div class="search-input">
-            <input type="search">
+            <input type="search" name="searchinpput">
           </div>
           <div class="search-btn">
             <input type="Submit" name="submit" value="Search">
@@ -194,6 +194,9 @@
       <!-- newsletter section start  -->
       <section class="newsletter-section">
         <div class="wrapper">
+          <figure style="display: none;">
+            <img src="https://dummyimage.com/1302x715/2ade96/fff" alt="newsletter background img">
+          </figure>
           <h3 class="heading">Subscribe Newsletters</h3>
           <h2 class="main-heading">Don't miss the chance</h2>
           <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod veniam voluptas vitae, quasi
@@ -239,63 +242,113 @@
         </div>
       </section>
       <!-- project section end -->
+
       <!-- team section start  -->
       <section class="team-section">
+        <div class="wrapper">
         <h3 class="heading">Digital Team</h3>
         <h2 class="main-heading">young and talented members</h2>
-        <div class="wrapper">
-          <ul>
+          <ul class="team-group1">
             <li>
-              <figure><img src="#" alt=""></figure>
-              <h2>j</h2>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.07 Oliva Sofie</h2>
+              <h3>Website Analyst</h3>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.01 White Cheese</h2>
+              <h3>Digital Marketer</h3>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.02 Snow Mary</h2>
+              <h3>Site Analyst</h3>
             </li>
           </ul>
-          <figure class="team-picture">
-            <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="">
-            <h3>.07 Oliva Sofie</h3>
-            <h4>Website Analyst</h4>
-          </figure>
-          <figure class="team-picture">
-            <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="">
-            <h3>.01 White Cheese</h3>
-            <h4>Digital Marketer</h4>
-          </figure>
-          <figure class="team-picture">
-            <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="">
-            <h3>.02 Snow Mary</h3>
-            <h4>Site Analyst</h4>
-          </figure>
-          <div class="btn-control">
-            <button class="btn">dots</button>
-            <button class="btn"></button>
-            <button class="btn"></button>
+          <ul style="display: none;" class="team-group2">
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.07 Oliva Sofie</h2>
+              <h3>Website Analyst</h3>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.01 White Cheese</h2>
+              <h3>Digital Marketer</h3>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.02 Snow Mary</h2>
+              <h3>Site Analyst</h3>
+            </li>
+          </ul>
+          <ul style="display: none ;" class="team-group3">
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.07 Oliva Sofie</h2>
+              <h3>Website Analyst</h3>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.01 White Cheese</h2>
+              <h3>Digital Marketer</h3>
+            </li>
+            <li>
+              <figure><img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="team member photo"></figure>
+              <h2>.02 Snow Mary</h2>
+              <h3>Site Analyst</h3>
+            </li>
+          </ul>
+          <div class="team-slider">
+            <span class="dots">dots</span>
+            <span class="dots">dots</span>
+            <span class="dots">dots</span>
           </div>
         </div>
       </section>
       <!-- team section ends -->
+
+
       <!-- contact section start  -->
       <section class="contact-section">
         <div class="wrapper">
-          <h3 class="heading">Contact Us</h3>
+        <h3 class="heading">Contact Us</h3>
           <div class="contact-detail">
             <h2 class="main-heading">Feel free to keep in touch with us!</h2>
 
             <ul class="contact">
-              <li><i class="fa fa-envelope" aria-hidden="true"></i>010-020-0860</li>
-              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="mailto:info@company.com"> info@company.com</a>
+              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="telto:010-020-0860">010-020-0860</a></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@company.com"> info@company.com</a>
               </li>
-              <li><i class="fa fa-globe" aria-hidden="true"></i>www.company.com</li>
+              <li><i class="fa fa-globe" aria-hidden="true"></i><a href="https://www.company.com" title="www.company.com">www.company.com</a></li>
             </ul>
 
           </div>
           <div class="contact-form">
-            <form action="#" method="get">
-              <input type="text" name="name" placeholder="Your Name">
-              <input type="number" name="phone" placeholder="Your Phone">
-              <input type="email" name="email">
-              <input type="text" name="subject">
-              <textarea name="message" cols="30" rows="10"></textarea>
-              <button type="submit">Send Message Now</button>
+            <form action="#FIXME" method="get">
+              <div class="name-phone-row">
+                <div>
+                  <input type="text" name="name" placeholder="Your Name">
+                </div>
+                  <div>
+                    <input type="number" name="phone" placeholder="Your Phone">
+                </div>
+              </div>
+
+              <div class="email-subject-row">
+                <div>
+                  <input type="email" name="email" placeholder="Your Email">
+                </div>
+                <div>
+                  <input type="text" name="subject" placeholder="Subject">
+                </div>
+              </div>
+              <div class="message">
+                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+              </div>
+              <div class="send-msg-btn">
+               <input type="submit" name="send message" value="Send Message Now"> 
+              </div>
             </form>
           </div>
         </div>
