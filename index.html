@@ -46,21 +46,52 @@
   <!--container start-->
   <div class="container">
     <!--header section start-->
-    <header>
-      <div class="logo">
-        <h1><a href="#">.BREEZED</a></h1>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#" title="Home">Home</a></li>
-          <li><a href="#" title="Home">About</a></li>
-          <li><a href="#" title="Home">Projects</a></li>
-          <li><a href="#" title="Home">Drop Down</a></li><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-          <li><a href="#" title="Home">Contact Us</a></li>
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo">
+          <h1><a href="#" title="BREEZED">.BREEZED</a></h1>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="#FIXME" title="Home" rel="noopener noreferrer">Home</a></li>
+            <li>
+              <a href="#FIXME" title="About" rel="noopener noreferrer">About</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Projects" rel="noopener noreferrer">Projects</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Drop Down" rel="noopener noreferrer">Drop Down</a>
+            </li><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <ul style="display: none;">
+              <li><a href="#FIXME" title="Drop Down 1" rel="noopener noreferrer"></a>Drop Down 1</li>
+              <li><a href="#FIXME" title="Drop Down 2" rel="noopener noreferrer"></a>Drop Down 2</li>
+              <li><a href="#FIXME" title="Drop Down 3" rel="noopener noreferrer"></a>Drop Down 3</li>
+            </ul>
+            <li><a href="#FIXME" title="Home" rel="noopener noreferrer">Contact Us</a></li>
+          </ul>
+        </nav>
+        
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        
+        <form style="display: none;" action="#FIXME" class="searchbar">
+          <div class="search-input">
+            <input type="search" />
+          </div>
+          <div class="search-btn">
+            <input type="Submit" name="submit" value="Search"/>
+          </div>
+        </form>
+        <div>
           <i class="fa fa-search" aria-hidden="true"></i>
-        </ul>
-      </nav>
-    </header>
+        </div>
+      </div>
+      </header>
     <!--header section end-->
     <!--main section start-->
     <main>
@@ -134,16 +165,24 @@
             <h2>Don't miss the chance</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod veniam voluptas vitae, quasi exercitationem doloremque, pariatur non perferendis hic nemo, explicabo provident quibusdam.</p>
             <div class="subscribe">
+              <form action="">
+                <div>
+                  <input type="email" >
+                </div>
+                <div>
+                  <input type="email" />
+                </div>
+                <button type="submit">Subscribe Now</button>
+              </form>
               <input type="email">
-              <button>Subscribe Now</button>
             </div>
           </div>
         </section>
       <!-- newsletter section start  -->
       <section class="project-section">
         <div class="wrapper">
+          <h3 class="heading">Our Projects</h3>
           <div class="project-list">
-            <h3 class="heading">Our Projects</h3>
             <h2 class="main-heading">Some of our latest projects</h2>
             <ul class="project-list">
               <li class="project-name">All</li>
@@ -154,7 +193,7 @@
             </ul>
           </div>
           <div class="project-photos">
-            <figure><img src="https://dummyimage.com/256x312/000htt/fff" alt=""></figure>
+            <figure><img src="https://dummyimage.com/256x312/000htt/fff" alt="" /></figure>
             <figure><img src="https://dummyimage.com/256x312/000htt/fff" alt=""></figure>
             <figure><img src="https://dummyimage.com/256x312/000htt/fff" alt=""></figure>
             <figure><img src="https://dummyimage.com/256x312/000htt/fff" alt=""></figure>
@@ -169,6 +208,9 @@
         <h3 class="heading">Digital Team</h3>
         <h2 class="main-heading">young and talented members</h2>
         <div class="wrapper">
+          <ul>
+            <li><figure><img src="#" alt=""></figure><h2>j</h2></li>
+          </ul>
           <figure class="team-picture">
             <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="">
             <h3>.07 Oliva Sofie</h3>
@@ -185,7 +227,7 @@
             <h4>Site Analyst</h4>
           </figure>
           <div class="btn-control">
-            <button class="btn"></button>
+            <button class="btn">dots</button>
             <button class="btn"></button>
             <button class="btn"></button>
           </div>
@@ -195,16 +237,16 @@
       <!-- contact section start  -->
       <section class="contact-section">
         <div class="wrapper">
+          <h3 class="heading">Contact Us</h3>
           <div class="contact-detail">
-            <h3 class="heading">Contact Us</h3>
             <h2 class="main-heading">Feel free to keep in touch with us!</h2>
-            <div>
+            
               <ul class="contact">
                 <li><i class="fa fa-envelope" aria-hidden="true"></i>010-020-0860</li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i><a href="mailto:info@company.com"> info@company.com</a></li>
                 <li><i class="fa fa-globe" aria-hidden="true"></i>www.company.com</li>
               </ul>
-            </div>
+            
           </div>
           <div class="contact-form">
             <form action="#" method="get">
@@ -213,7 +255,7 @@
               <input type="email" name="email">
               <input type="text" name="subject">
               <textarea name="message"  cols="30" rows="10"></textarea>
-              <button>Send Message Now</button>
+              <button type="submit">Send Message Now</button>
             </form>
           </div>
         </div>
@@ -230,7 +272,7 @@
           <span>Copyright &copy 2020 Breezed Co.,Ltd -Design:TemplateMo</span>
         </div>
         <div class="social-link">
-          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           <a href="#" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
