@@ -106,6 +106,10 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.header{
+ position: relative;
+}
+
 .header .wrapper{
   padding-top: 28px;
   display: flex;
@@ -125,7 +129,13 @@ li {
 h1 a{
   font-size: 27px;
   font-weight: 550;
-  color: #000;
+  color: #fff;
+}
+
+.navbar-list li a.active,
+.navbar-list li a:hover{
+  color: #010912;
+  transition: all .3s ease;
 }
 
 .navbar-list li ul{
@@ -135,16 +145,21 @@ h1 a{
   font-size: 14px;
   padding: 0 20px;
   text-transform: uppercase;
-  /* color: #e1e1e1; */
-  color: black;
+  color: #e1e1e1;
+  /* color: black; */
 }
 .navbar-list li:nth-child(4) a::before{
   content: "\f107";
   float: right;
   font-family: "FontAwesome";
   padding-left: 10px;
-  /* color: #fff; */
-  color: #000;
+  color: #fff;
+  /* color: #000; */
+}
+
+.navbar-list li:nth-child(4) a:hover::before{
+  color: #010912;
+  transition: all .3s ease;
 }
 
 .hamburger{
@@ -174,8 +189,8 @@ h1 a{
   color: #000;
   text-indent: 0;
   padding: 12px;
-  background-color: red;
-  /* background-color: #fff; */
+  /* background-color: red; */
+  background-color: #fff;
 }
 
 
@@ -190,10 +205,152 @@ h1 a{
 /*=================================
   main styling starts here
 =================================*/
+/* hero section styling start  */
+.hero-section .wrapper{
+  width: 100%;
+}
+
+.banner-list{
+  position: relative;
+}
+.banner-list .slider{
+  padding: 260px 0 327px;
+  text-align: center;
+  width: 100%;
+}
+
+.banner{
+  position: absolute;
+  top: -69px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 
 
+.banner-list .slider:nth-child(2),
+.banner-list .slider:nth-child(3){
+  display: none;
+}
+
+.heading{
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 28px;
+}
+
+.main-heading{
+  font-size: 42px;
+  color: #fff;
+  padding-bottom: 38px;
+}
+
+.slider a{
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 11px 30px;
+  color: #76b96b;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.banner-list .slider:nth-child(1) h2 + a{
+  border: 2px solid #fff;
+  background-color: #5B77A6;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.slider a:hover{
+  color: #fff;
+  background-color: #76b96b;
+  border: 2px solid #fff;
+  transition: all .3s ease;
+}
+
+.banner-list .slider:nth-child(1) h2 + a:hover{
+  color: #5B77A6;
+  background-color: #fff;
+  border: 2px solid #76b96b;
+  transition: all .3s ease;
+}
+
+.angle-left,.angle-right{
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.angle-right{
+  float: right;
+}
 
 
+.slide-control{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+}
+
+.angle-left::before{
+  content: "\f104";
+  float: left;
+  font-family: "FontAwesome";
+  text-indent: 0;
+  font-size: 28px;
+  color: #fff;
+  margin-left: 32px;
+}
+
+.angle-right::before{
+  content: "\f105";
+  float: right;
+  font-family: "FontAwesome";
+  text-indent: 0;
+  font-size: 28px;
+  color: #fff;
+  margin-right: 32px;
+}
+
+.angle-left:hover::before,
+.angle-right:hover::before{
+  color: #000;
+  transition: all .3s ease;
+}
+
+.angle{
+  display: flex;
+  text-indent: -9999px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+  .angle::before {
+    content: "\f063";
+    font-family: "FontAwesome";
+    float: left;
+    text-indent: 0;
+    position: absolute;
+    top: -155px;
+    color: #fff;
+    padding: -3px 0px;
+    background: #56A352;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+
+/* hero-section styling end here  */
 
 
 
