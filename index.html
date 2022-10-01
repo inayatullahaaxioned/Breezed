@@ -1,45 +1,11 @@
 <!doctype html>
-
-<!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
-
   <title>Breezed</title>
-
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-
-  <!-- To adhear no-cache for Chrome -->
-  <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
-
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" >
-
-  <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-
 </head>
 
 <body>
@@ -54,7 +20,7 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li>
-              <a href="#FIXME" title="Home">Home</a>
+              <a class="active" href="#FIXME" title="Home">Home</a>
             </li>
             <li>
               <a href="#FIXME" title="About">About</a>
@@ -88,13 +54,9 @@
         </div>
         <form action="#FIXME" class="searchbar">
           <div class="search-input">
-            <input type="search" name="search-input">
+            <input class="search-icon" type="search" name="search-input">
           </div>
-          <input class="search-btn" type="submit" name="submit" value="Search">
         </form>
-        <div class="search-icon">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
       </div>
     </header>
     <!--header section end-->
@@ -103,10 +65,10 @@
       <!-- hero section start  -->
       <section class="hero-section">
         <div class="wrapper">
-          <div class="rightleft-arrow">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
+          <div class="slide-control">
+            <span class="angle-left">Angle left</span>
+            <span class="angle-right">Angle right</span>
           </div>
           <ul>
             <li class="slider">
@@ -137,6 +99,9 @@
               <a href="#FIXME" title="Take Action">Take Action</a>
             </li>
           </ul>
+          <div class="angle-control">
+            <span class="angle down">Angle down</span>
+          </div>
           </div>
       </section>
       <!-- hero secion end  -->
@@ -148,10 +113,10 @@
             <div class="about">
               <h2>We work with top brands and startups</h2>
               <ul class="about-list">
-                <li class="list-item"><i class="fa fa-rocket" aria-hidden="true"></i>TOP NOTCH</li>
-                <li class="list-item"><i class="fa fa-rocket" aria-hidden="true"></i>ROBUST</li>
-                <li class="list-item"><i class="fa fa-globe" aria-hidden="true"></i>RELIABLE</li>
-                <li class="list-item"><i class="fa fa-globe" aria-hidden="true"></i>UP-TO-DATE</li>
+                <li class="list-item"><span class="rocket">Rocket</span>TOP NOTCH</li>
+                <li class="list-item"><span class="rocket">Rocket</span>ROBUST</li>
+                <li class="list-item"><span class="globe">Globe</span> RELIABLE</li>
+                <li class="list-item"><span class="globe">Globe</span>UP-TO-DATE</li>
               </ul>
               <div>
                 <a href="#FIXME" title="Learn More">Learn More</a>
@@ -171,36 +136,32 @@
           </div>
           <ul class="feature-list">
             <li class="feature">
-              <i class="fa fa-rocket-launch fa-rocket" aria-hidden="true"></i>
+              <span class="rocket-launch">Rocket</span>
               <h2>Initial Work</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem, eos a cum voluptatum
                 distinctio porro placeat nemo.</p>
-              <a href="#FIXME" title="Learn more">Learn More</a>
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <a class="arrow-right" href="#FIXME" title="Learn more">Learn More</a>
             </li>
             <li class="feature">
-              <i class="fa fa-rocket-launch fa-rocket" aria-hidden="true"></i>
+              <span class="rocket-launch">Rocket</span>
               <h2>Master Planning</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem, eos a cum voluptatum
                 distinctio
                 porro placeat nemo.</p>
-              <a href="#FIXME" title="Learn more">Learn More</a>
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <a class="arrow-right" href="#FIXME" title="Learn more">Learn More</a>
             </li>
             <li class="feature">
-              <i class="fa fa-rocket-launch fa-rocket" aria-hidden="true"></i>
+              <span class="rocket-launch">Rocket</span>
               <h2>Smooth Execution</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem, eos a cum voluptatum
                 distinctio
                 porro placeat nemo.</p>
-              <a href="#FIXME" title="Learn more">Learn More</a>
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <a class="arrow-right" href="#FIXME" title="Learn more">Learn More</a>
             </li>
           </ul>
         </div>
       </section>
       <!-- about section end  -->
-
       <!-- newsletter section start  -->
       <section class="newsletter-section">
         <div class="wrapper">
@@ -222,7 +183,6 @@
         </div>
       </section>
       <!-- newsletter section end  -->
-
       <!-- project section start  -->
       <section class="project-section">
         <div class="wrapper">
@@ -231,7 +191,7 @@
             <h2 class="main-heading">Some of our latest projects</h2>
             <ul class="project-list">
               <li class="project-name">
-                <a href="#FIXME" title="All">All</a>
+                <a class="active" href="#FIXME" title="All">All</a>
               </li>
               <li class="project-name">
                 <a href="#FIXME" title="Web Design">Web Design</a>
@@ -267,7 +227,6 @@
         </div>
       </section>
       <!-- project section end -->
-
       <!-- team section start  -->
       <section class="team-section">
         <div class="wrapper">
@@ -353,11 +312,11 @@
           <div class="contact-detail">
             <h2 class="main-heading">Feel free to keep in touch with us!</h2>
             <ul class="contact">
-              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:010-020-0860" title="">010-020-0860</a></li>
-              <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@company.com" title="">
+              <li><span class="phone">Phone</span><a href="tel:010-020-0860" title="">010-020-0860</a></li>
+              <li><span class="email">Email</span><a href="mailto:info@company.com" title="">
                   info@company.com</a>
               </li>
-              <li><i class="fa fa-globe" aria-hidden="true"></i><a href="https://www.company.com"
+              <li><span class="globe">Globe</span><a href="https://www.company.com"
                   title="www.company.com">www.company.com</a></li>
             </ul>
           </div>
@@ -382,7 +341,7 @@
               <div class="form-input">
                 <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
               </div>
-              <input type="submit" name="send message" value="Send Message Now">
+              <input class="send-btn" type="submit" name="send message" value="Send Message Now">
             </form>
           </div>
         </div>
@@ -402,22 +361,22 @@
           <ul class="social-links">
             <li>
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
-                <i class="fa fa-facebook" aria-hidden="true"></i>Facebook
+                <span class="facebook">Facebook</span>
               </a>
             </li>
             <li>
               <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
-                <i class="fa fa-twitter" aria-hidden="true"></i>Twitter
+                <span class="twitter">Twitter</span>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Linkedin">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin
+                <span class="twitter">Twitter</span>
               </a>
             </li>
             <li>
               <a href="https://www.company.com" target="_blank" rel="noopener noreferrer" title="www.company.com">
-                <i class="fa fa-globe" aria-hidden="true"></i>www.company.com
+                <span class="twitter">Twitter</span>
               </a>
             </li>
           </ul>
