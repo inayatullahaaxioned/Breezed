@@ -609,6 +609,60 @@ h1 a{
     border-radius: 30px;
   }
 
+    /* newsletter styling ends here  */
+
+  /* project section styling starts here  */
+
+  .project-section .heading{
+    color: #76b96b;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .project-section .wrapper{
+    padding: 128px 0;
+  }
+  .project-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-list{
+    flex-basis: 52%;
+  }
+
+  .project-flex .main-heading{
+    color: #000;
+    font-size: 34px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 44px;
+  }
+
+  .project-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .project-anc{
+    color: #9C9E95;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .project-anc.active{
+    color: #76b96b;
+  }
+
+  .project-filter{
+    margin: 12px;
+  }
+
+
+
 
 
 
