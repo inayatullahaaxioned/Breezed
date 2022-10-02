@@ -533,7 +533,84 @@ h1 a{
   }
 
   /* about section styling ends here  */
-  
+
+  /* newsletter section styling starts here  */
+  .newsletter-section{
+    position: relative;
+    /* height: 412px; */
+  }
+
+  .newsletter-section figure img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+  }
+
+  .newsletter-section .wrapper{
+    width: 70%;
+    padding: 86px 0 117px 0;
+  }
+
+  .heading, .main-heading , .para{
+    text-align: center;
+    color: #FFFFFD;
+  }
+
+  .newsletter-section .heading{
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  .newsletter-section .main-heading{
+    font-size: 41px;
+    padding-bottom: 28px;
+  }
+
+  .para{
+    width: 82%;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+  .subscribe{
+    margin-top: 45px;
+  }
+
+  .subscribe form{
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin: 0 auto;
+    height: 40px;
+  }
+
+  .form-input{
+    flex-basis: 66%;
+  }
+  .subscribe-btn{
+    flex-basis: 24%;
+    color: #8ABC80;
+    border: 0.5px solid #8ABC80;
+    background-color: #ffffff;
+    border-radius: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    height: 40px;
+  }
+
+  .form-input input{
+    width: 100%;
+    padding: 5px 11px 5px 23px;
+    line-height: 28px;
+    border: 0.5px solid #fff;
+    border-radius: 30px;
+  }
+
+
+
 
 
 
