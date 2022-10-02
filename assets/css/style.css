@@ -355,15 +355,14 @@ h1 a{
 /* about section styling starts here  */
 
 .about-section{
-  background: rgb(229,229,229);
-  /* height: 980px; */
+  background: #ffffff;
 }
 
   .half-about{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-basis: 43%;
+    margin-bottom: 85px;
   }
 
   .about{
@@ -377,7 +376,7 @@ h1 a{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 14px;
-    color: #5fb65a;
+    color: #83C3A0;
   }
 
   .about h2{
@@ -405,7 +404,7 @@ h1 a{
     padding-right: 16px;
   }
 
-  .rocket::before{
+  .about-item::before{
     content: "\f135";
     font-family: "FontAwesome";
     float: left;
@@ -422,30 +421,119 @@ h1 a{
   }
   .globe::before{
     content: "\f0ac";
-    font-family: "FontAwesome";
-    float: left;
-    text-indent: 0;
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-    color: #fff;
-    background: linear-gradient( to right, #39A09A , #6CCA9E );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
   }
-/* 
-  .about-content{
-    padding: 5px;
-  } */
   
   .about-content p{
     font-size: 17px;
     line-height: 25px;
     color: #9C9E95;
-    padding-bottom: 43px;
+    padding-bottom: 30px;
   }
+
+  .before-btn{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 16px 34px;
+    background: #60B65B;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    color: #fff;
+    margin-top: 25px;
+  }
+
+  .before-btn::before{
+    content: "\f061";
+    font-family: "FontAwesome";
+    float: right ;
+    padding-left: 13px;
+  }
+
+  .about-section .wrapper{
+    position: relative;
+  }
+  .half-about::after{
+    content: "";
+    width: 100%;
+    height: 7px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 438px;
+    border-radius: 2px;
+  }
+
+  /* feature list styling starts  */
+
+  .feature-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 0 134px 0;
+  }
+
+  .rocket-launch{
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+  }
+
+  
+  .rocket-launch::before{
+    content: "\f135";
+    position: absolute;
+    top: 15px;
+    font-family: "FontAwesome";
+    font-size: 52px;
+    text-indent: 0;
+    font-size: 48px;
+    left: 0;    
+    background: linear-gradient(to right, #48c3b3 50%, #5AC19C 50%);
+    -webkit-text-fill-color: #6CCA9E;
+    -webkit-background-clip: text;
+  }
+
+  .feature-list h2{
+    color: #202B38;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+
+  .about-content .about-para a{
+    padding-right: 4px;
+  }
+
+  .feature h2,
+  .feature p,
+  .feature a{
+    padding-left: 78px;
+  }
+
+  .feature p{
+    font-size: 15px;
+    color: #9C9E95;
+    line-height: 25px;
+    padding:21px  37px 0 78px;
+  }
+
+  .arrow-right{
+    color: #202B38;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 20px;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+  }
+
+  .arrow-right::before{
+    content: "\f061";
+    float: right;
+    font-family: "FontAwesome";
+    padding-left: 10px;
+
+  }
+
+  /* about section styling ends here  */
+  
 
 
 
