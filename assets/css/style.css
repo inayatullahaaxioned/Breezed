@@ -601,19 +601,21 @@ h1 a{
     height: 40px;
   }
 
-  .form-input input{
+  .newsletter-section .form-input input{
     width: 100%;
     padding: 5px 11px 5px 23px;
     line-height: 28px;
     border: 0.5px solid #fff;
     border-radius: 30px;
+    background: transparent;
   }
 
     /* newsletter styling ends here  */
 
   /* project section styling starts here  */
 
-  .project-section .heading{
+  .project-section .heading,
+  .contact-section .heading{
     color: #76b96b;
     text-align: left;
     font-size: 15px;
@@ -631,7 +633,8 @@ h1 a{
     flex-basis: 52%;
   }
 
-  .project-flex .main-heading{
+  .project-flex .main-heading,
+  .contact-section .main-heading{
     color: #000;
     font-size: 34px;
     text-align: left;
@@ -729,7 +732,114 @@ h1 a{
     opacity: 0.7;
   }
 
+  /* team styling ends here  */
 
+  /* contact section styling starts here  */
+
+  .contact-section{
+    background-color: #f0f0f0;
+  }
+
+  .contact-section .wrapper{
+    padding: 130px 0;
+  }
+
+  .contact-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .contact li{
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .contact-form{
+    flex-basis: 97%;
+  }
+
+  .contact-icon{
+    font-size: 15px;
+    font-weight: 550;
+    color: #000;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-icon::before{
+    content: "\f095" ;
+    float: left;
+    font-family: "FontAwesome";
+    font-size: 25px;
+    color: #F8F8F9;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient( to right, #39A09A , #6CCA9E );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .mail::before{
+    content: "\f0e0";
+  }
+
+  .website::before{
+    content: "\f0ac";
+  }
+
+  .form-row{
+    display: flex;
+  }
+
+  .contact-form .form-input input{
+    width: 87%;
+    padding: 8px 11px 8px 23px;
+    line-height: 28px;
+    border: 0.5px solid #e0e0e0;
+    background-color: transparent;
+    margin: 10px;
+  }
+  .form-input textarea{
+    width: 95%;
+    resize: none;
+    border: .5px solid #e0e0e0;
+    background-color: transparent;
+    padding: 5px 11px 5px 23px;
+  }
+  
+  .send-btn{
+    width: 230px;
+    font-size: 13px;
+    font-weight: 550;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    background: #60B65B;
+    margin-top: 30px;
+    padding: 16px 0;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .send-btn::before{
+    content: "\f061";
+    float: right;
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 202px;
+  }
+
+  /* contact section styling ends here  */
 
 
 
