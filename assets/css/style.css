@@ -661,6 +661,75 @@ h1 a{
     margin: 12px;
   }
 
+  /* project section css ends here  */
+
+  /* team section styling starts here  */
+
+  .team-section{
+    background: #625AA5;
+  }
+
+  .team-section .wrapper{
+    padding: 125px 0;
+  }
+
+  .team-item{
+    display: none;
+  }
+  
+  .show{
+    display: block;
+  }
+
+  .team-group1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 22px;
+  }
+
+  .team-section .heading{
+    font-size:17px ;
+  }
+
+  .team-name , .designation{
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .team-name{
+    margin-top: 30px;
+    letter-spacing: 1px;
+  }
+  .designation{
+    font-size: 14px;
+    margin-top: 13px;
+  }
+
+  .team-slider{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .dot{
+    background-color: #ffffff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  
+  .dot:hover{
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+
+
 
 
 
