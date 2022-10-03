@@ -211,6 +211,7 @@ h1 a{
 /* hero section styling start  */
 .hero-section .wrapper{
   width: 100%;
+  position: relative;
 }
 
 .banner-list .slider{
@@ -220,14 +221,13 @@ h1 a{
 
 .banner{
     position: relative;
-    /* top: -68px; */
 }
 
 .banner-content{
     position: absolute;
     top: 50%;
-    left: 34%;
     transform: translateY(-50%);
+    padding: 0 34%;
 }
 
 .slider{
@@ -287,6 +287,7 @@ h1 a{
 .angle-left,.angle-right{
   display: inline-block;
   text-indent: -9999px;
+  position: relative;
 }
 
 .angle-right{
@@ -664,9 +665,9 @@ h1 a{
     justify-content: space-between;
   }
 
-  .project-list{
+  /* .project-list{
     flex-basis: 43%;
-  }
+  } */
 
   .project-flex .main-heading,
   .contact-section .main-heading{
@@ -714,6 +715,7 @@ h1 a{
   }
 
   .team-item{
+    margin: 1.5%;
     display: none;
   }
   
@@ -861,7 +863,7 @@ h1 a{
     resize: none;
     border: .5px solid #e0e0e0;
     background-color: transparent;
-    padding: 5px 11px 5px 23px;
+    padding: 20px 11px 5px 23px;
     margin: 10px;
   }
 
@@ -988,9 +990,11 @@ h1 a{
 =================================*/ 
 
 /*media query starts*/
-/*media query for 1294 starts here*/
-@media only screen and (max-width: 1315px) {
- 
+/*media query for 1024 starts here*/
+@media only screen and (max-width: 1024px) {
+  
+  .logo { flex-basis: 34%; }
+
   }
 
 
