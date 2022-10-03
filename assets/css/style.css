@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 85%; 
+  width: 86.5%; 
   margin: 0 auto;
 }
 /*=================================
@@ -125,7 +125,7 @@ li {
 
 h1 a{
   font-size: 27px;
-  font-weight: 550;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -224,7 +224,7 @@ h1 a{
   font-size: 17px;
   text-transform: uppercase;
   color: #fff;
-  padding-bottom: 28px;
+  padding-bottom: 23px;
 }
 
 .main-heading{
@@ -233,15 +233,18 @@ h1 a{
   padding-bottom: 38px;
 }
 
-.slider a{
-  font-size: 13px;
+.read-btn,
+.action-btn {
+  font-size: 14px;
   text-transform: uppercase;
   padding: 11px 30px;
   color: #76b96b;
-  border: 2px solid transparent;
+  border: 2px solid #fff;
   border-radius: 30px;
   background-color: #fff;
 }
+
+.read-btn { background: transparent; }
 
 .banner-list .slider:nth-child(1) h2 + a{
   border: 2px solid #fff;
@@ -321,7 +324,7 @@ h1 a{
     float: left;
     text-indent: 0;
     position: absolute;
-    top: -188px;
+    top: -550%;
     color: #fff;
     padding: -3px 0px;
     background: #56A352;
@@ -356,23 +359,27 @@ h1 a{
     flex-basis: 49%;
   }
   .about-content{
-    flex-basis: 50%;
+    flex-basis: 49%;
   }
 
-  .about-section h3{
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    color: #83C3A0;
-  }
+ .about-section .heading {
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 14px;
+   color: #83C3A0;
+   text-align: left;
+ }
 
-  .about h2{
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 24px;
-    padding-right: 25px;
-    letter-spacing: 1px;
-  }
+.about .main-heading {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1%;
+  padding-right: 25px;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: left;
+}
+
   .about-list{
     display: flex;
     align-items: center;
@@ -382,7 +389,7 @@ h1 a{
     display: flex;
     align-items: center;
     flex-basis: 50%;
-    margin-bottom: 33px;
+    margin-bottom: 28px;
   }
 
   .rocket, .globe{
@@ -410,7 +417,7 @@ h1 a{
     content: "\f0ac";
   }
   
-  .about-content p{
+  .about-para {
     font-size: 17px;
     line-height: 25px;
     color: #9C9E95;
@@ -425,7 +432,7 @@ h1 a{
     border-radius: 30px;
     border: 2px solid transparent;
     color: #fff;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   .before-btn::before{
@@ -437,6 +444,7 @@ h1 a{
 
   .about-section .wrapper{
     position: relative;
+    margin-top: 3%;
   }
   .half-about::after{
     content: "";
@@ -444,7 +452,7 @@ h1 a{
     height: 7px;
     background-color: #f8f8f8;
     position: absolute;
-    top: 438px;
+    top: 67%;
     border-radius: 2px;
   }
 
@@ -507,7 +515,7 @@ h1 a{
     text-transform: uppercase;
     font-size: 14px;
     padding-top: 20px;
-    font-weight: 550;
+    font-weight: 500;
     letter-spacing: 0.5px;
   }
 
@@ -608,16 +616,17 @@ h1 a{
     font-size: 15px;
   }
 
-  .project-section .wrapper{
-    padding: 128px 0;
+  .project-section .wrapper {
+      padding: 10% 0 12% 0;
   }
+
   .project-flex{
     display: flex;
     justify-content: space-between;
   }
 
   .project-list{
-    flex-basis: 52%;
+    flex-basis: 43%;
   }
 
   .project-flex .main-heading,
@@ -648,7 +657,7 @@ h1 a{
   }
 
   .project-filter{
-    margin: 5px;
+    margin: 15px;
   }
 
   /* project section css ends here  */
@@ -680,6 +689,8 @@ h1 a{
   .team-section .heading{
     font-size:17px ;
   }
+
+  .team-section .main-heading { text-transform: lowercase;}
 
   .team-name , .designation{
     font-size: 18px;
@@ -754,7 +765,7 @@ h1 a{
 
   .contact-icon{
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 500;
     color: #000;
     display: flex;
     align-items: center;
@@ -803,11 +814,18 @@ h1 a{
     padding: 5px 11px 5px 23px;
     margin: 10px;
   }
-  
+
+  .form-input input::placeholder,
+  .form-input textarea::placeholder{
+    font-size: 15px;
+    letter-spacing: .5px;
+    padding-top: 10px;
+  }
+
   .send-btn{
     width: 230px;
     font-size: 13px;
-    font-weight: 550;
+    font-weight: 500;
     color: #fff;
     text-transform: uppercase;
     border: none;
@@ -883,8 +901,8 @@ h1 a{
       color: #56A352;
       text-indent: 0;
       font-size: 15px;
-      height: 35px;
-      width: 35px;
+      height: 32px;
+      width: 32px;
       border-radius: 50%;
       background-color: #fff;
       display: flex;
