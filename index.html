@@ -1,45 +1,11 @@
 <!doctype html>
-
-<!-- If multi-language site, reconsider usage of html lang declaration here. -->
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
-
   <title>Breezed</title>
-
-  <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <!-- <meta name="description" lang="en" content=""> -->
-
-  <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <!-- <meta name="keywords" lang="en" content=""> -->
-
-  <!-- View-port Basics: http://mzl.la/VYREaP -->
-  <!-- This meta tag is used for mobile device to display the page without any zooming,
-       so how much the device is able to fit on the screen is what's shown initially. 
-       Remove comments from this tag, when you want to apply media queries to the website. -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-
-  <!-- To adhear no-cache for Chrome -->
-  <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-store, no-cache" />
-  <meta http-equiv="Expires" content="0" /> -->
-
-  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" >
-
-  <!--font-awesome link for icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
-
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
-  <!--[if lt IE 9]>  
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
-  <![endif]-->
-
 </head>
 
 <body>
@@ -54,7 +20,7 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li>
-              <a href="#FIXME" title="Home">Home</a>
+              <a class="active" href="#FIXME" title="Home">Home</a>
             </li>
             <li>
               <a href="#FIXME" title="About">About</a>
@@ -88,13 +54,9 @@
         </div>
         <form action="#FIXME" class="searchbar">
           <div class="search-input">
-            <input type="search" name="search-input">
+            <input type="search" name="search-input"><span class="search-icon">Search Icon</span>
           </div>
-          <input class="search-btn" type="submit" name="submit" value="Search">
         </form>
-        <div class="search-icon">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
       </div>
     </header>
     <!--header section end-->
@@ -103,12 +65,7 @@
       <!-- hero section start  -->
       <section class="hero-section">
         <div class="wrapper">
-          <div class="rightleft-arrow">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-          </div>
-          <ul>
+          <ul class="banner-list">
             <li class="slider">
               <figure class="banner">
                 <img src="https://dummyimage.com/1302x715/2ade96/fff" alt="Slide one">
@@ -149,6 +106,13 @@
               </figure>
             </li>
           </ul>
+          <div class="slide-control">
+            <span class="angle-left">Angle left</span>
+            <span class="angle-right">Angle right</span>
+          </div>
+          <div class="angle-control">
+            <span class="angle down">Angle down</span>
+          </div>
           </div>
       </section>
       <!-- hero secion end  -->
@@ -160,13 +124,13 @@
             <div class="about">
               <h2 class="main-heading">We work with top brands and startups</h2>
               <ul class="about-list">
-                <li class="list-item"><i class="fa fa-rocket" aria-hidden="true"></i>TOP NOTCH</li>
-                <li class="list-item"><i class="fa fa-rocket" aria-hidden="true"></i>ROBUST</li>
-                <li class="list-item"><i class="fa fa-globe" aria-hidden="true"></i>RELIABLE</li>
-                <li class="list-item"><i class="fa fa-globe" aria-hidden="true"></i>UP-TO-DATE</li>
+                <li class="list-item"><span class="about-item rocket">Rocket</span>TOP NOTCH</li>
+                <li class="list-item"><span class="about-item rocket">Rocket</span>ROBUST</li>
+                <li class="list-item"><span class="about-item globe">Globe</span> RELIABLE</li>
+                <li class="list-item"><span class="about-item globe">Globe</span>UP-TO-DATE</li>
               </ul>
-              <div>
-                <a href="#FIXME" title="Learn More">Learn More</a>
+              <div class="more-btn">
+                <a class="before-btn" href="#FIXME" title="Learn More">Learn More</a>
               </div>
             </div>
             <div class="about-content">
@@ -183,41 +147,37 @@
           </div>
           <ul class="feature-list">
             <li class="feature">
-              <i class="fa fa-rocket-launch fa-rocket" aria-hidden="true"></i>
+              <span class="rocket-launch">Rocket</span>
               <h2>Initial Work</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem, eos a cum voluptatum
                 distinctio porro placeat nemo.</p>
-              <a href="#FIXME" title="Learn more">Learn More</a>
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <a class="arrow-right" href="#FIXME" title="Learn more">Learn More</a>
             </li>
             <li class="feature">
-              <i class="fa fa-rocket-launch fa-rocket" aria-hidden="true"></i>
+              <span class="rocket-launch">Rocket</span>
               <h2>Master Planning</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem, eos a cum voluptatum
                 distinctio
                 porro placeat nemo.</p>
-              <a href="#FIXME" title="Learn more">Learn More</a>
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <a class="arrow-right" href="#FIXME" title="Learn more">Learn More</a>
             </li>
             <li class="feature">
-              <i class="fa fa-rocket-launch fa-rocket" aria-hidden="true"></i>
+              <span class="rocket-launch">Rocket</span>
               <h2>Smooth Execution</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatem, eos a cum voluptatum
                 distinctio
                 porro placeat nemo.</p>
-              <a href="#FIXME" title="Learn more">Learn More</a>
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <a class="arrow-right" href="#FIXME" title="Learn more">Learn More</a>
             </li>
           </ul>
         </div>
       </section>
       <!-- about section end  -->
-
       <!-- newsletter section start  -->
       <section class="newsletter-section">
         <div class="wrapper">
-          <figure>
-            <img src="https://dummyimage.com/1302x715/2ade96/fff" alt="Newsletter Background Image">
+          <figure class="newsletter-bg">
+            <img src="https://dummyimage.com/1360x412/44658a/fff" alt="Newsletter background image">
           </figure>
           <h3 class="heading">Subscribe Newsletters</h3>
           <h2 class="main-heading">Don't miss the chance</h2>
@@ -228,121 +188,121 @@
               <div class="form-input">
                 <input type="email" name="email">
               </div>
-              <input type="submit" name="submit-email" value="Subscribe">
+              <input class="subscribe-btn" type="submit" name="submit-email" value="Subscribe">
             </form>
           </div>
         </div>
       </section>
       <!-- newsletter section end  -->
-
       <!-- project section start  -->
       <section class="project-section">
         <div class="wrapper">
           <h3 class="heading">Our Projects</h3>
-          <div class="project-list">
-            <h2 class="main-heading">Some of our latest projects</h2>
-            <ul class="project-list">
-              <li class="project-name">
-                <a href="#FIXME" title="All">All</a>
-              </li>
-              <li class="project-name">
-                <a href="#FIXME" title="Web Design">Web Design</a>
-              </li>
-              <li class="project-name">
-                <a href="#FIXME" title="Web Development">Web Development</a>
-              </li>
-              <li class="project-name">
-                <a href="#FIXME" title="Graphics">Graphics</a>
-              </li>
-              <li class="project-name">
-                <a href="#FIXME" title="Artworks">Artworks</a>
-              </li>
-            </ul>
-          </div>
-          <div class="project-photos">
-            <ul class="project-nav">
-              <li class="project-filter web-design">
-                <img src="https://dummyimage.com/256x312/000htt/fff" alt="Web Design ">
-              </li>
-              <li class="project-filter web-design"><img src="https://dummyimage.com/256x312/000htt/fff"
-                  alt="Web Design"></li>
-              <li class="project-filter web-develop"><img src="https://dummyimage.com/256x312/000htt/fff"
-                  alt="Web Develop"></li>
-              <li class="project-filter web-develop"><img src="https://dummyimage.com/256x312/000htt/fff"
-                  alt="Web Develop"></li>
-              <li class="project-filter graphics"><img src="https://dummyimage.com/256x312/000htt/fff"
-                  alt="Graphic Project"></li>
-              <li class="project-filter artworks"><img src="https://dummyimage.com/256x312/000htt/fff"
-                  alt="Artworks Project"></li>
-            </ul>
+          <div class="project-flex">
+            <div class="project-list">
+              <h2 class="main-heading">Some of our latest projects</h2>
+              <ul class="project-menu">
+                <li class="project-name">
+                  <a class="project-anc active-anc"  href="#FIXME" title="All">All</a>
+                </li>
+                <li class="project-name">
+                  <a class="project-anc" href="#FIXME" title="Web Design">Web Design</a>
+                </li>
+                <li class="project-name">
+                  <a class="project-anc" href="#FIXME" title="Web Development">Web Development</a>
+                </li>
+                <li class="project-name">
+                  <a class="project-anc" href="#FIXME" title="Graphics">Graphics</a>
+                </li>
+                <li class="project-name">
+                  <a class="project-anc" href="#FIXME" title="Artworks">Artworks</a>
+                </li>
+              </ul>
+            </div>
+            <div class="project-photos">
+              <ul class="project-nav">
+                <li class="project-filter web-design">
+                  <img src="https://dummyimage.com/256x312/000htt/fff" alt="Web design ">
+                </li>
+                <li class="project-filter web-design"><img src="https://dummyimage.com/256x312/000htt/fff"
+                    alt="Web design"></li>
+                <li class="project-filter web-develop"><img src="https://dummyimage.com/256x312/000htt/fff"
+                    alt="Web develop"></li>
+                <li class="project-filter web-develop"><img src="https://dummyimage.com/256x312/000htt/fff"
+                    alt="Web develop"></li>
+                <li class="project-filter graphics"><img src="https://dummyimage.com/256x312/000htt/fff"
+                    alt="Graphic project"></li>
+                <li class="project-filter artworks"><img src="https://dummyimage.com/256x312/000htt/fff"
+                    alt="Artworks project"></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <!-- project section end -->
-
       <!-- team section start  -->
       <section class="team-section">
         <div class="wrapper">
           <h3 class="heading">Digital Team</h3>
           <h2 class="main-heading">Young and talented members</h2>
           <ul class="team-group1">
-            <li>
+            <li class="team-item show">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.07 Oliva Sofie</h2>
               <h3 class="designation">Website Analyst</h3>
             </li>
-            <li>
+            <li class="team-item show">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.01 White Cheese</h2>
               <h3 class="designation">Digital Marketer</h3>
             </li>
-            <li>
+            <li class="team-item show">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.02 Snow Mary</h2>
               <h3 class="designation">Site Analyst</h3>
             </li>
-            <li>
+            <li class="team-item">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.07 Oliva Sofie</h2>
               <h3 class="designation">Website Analyst</h3>
             </li>
-            <li>
+            <li class="team-item">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.01 White Cheese</h2>
               <h3 class="designation">Digital Marketer</h3>
             </li>
-            <li>
+            <li class="team-item">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.02 Snow Mary</h2>
               <h3 class="designation">Site Analyst</h3>
             </li>
-            <li>
+            <li class="team-item">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.07 Oliva Sofie</h2>
               <h3 class="designation">Website Analyst</h3>
             </li>
-            <li>
+            <li class="team-item">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
               <h2 class="team-name">.01 White Cheese</h2>
               <h3 class="designation">Digital Marketer</h3>
             </li>
-            <li>
+            <li class="team-item">
               <figure>
                 <img src="https://dummyimage.com/350x400/24bd6b/0011ff" alt="Team member photo">
               </figure>
@@ -362,40 +322,42 @@
       <section class="contact-section">
         <div class="wrapper">
           <h3 class="heading">Contact Us</h3>
-          <div class="contact-detail">
-            <h2 class="main-heading">Feel free to keep in touch with us!</h2>
-            <ul class="contact">
-              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:010-020-0860" title="">010-020-0860</a></li>
-              <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@company.com" title="">
-                  info@company.com</a>
-              </li>
-              <li><i class="fa fa-globe" aria-hidden="true"></i><a href="https://www.company.com"
-                  title="www.company.com">www.company.com</a></li>
-            </ul>
-          </div>
-          <div class="contact-form">
-            <form action="#FIXME" method="get">
-              <div class="form-row">
-                <div class="form-input">
-                  <input type="text" name="name" placeholder="Your Name">
+          <div class="contact-flex">
+            <div class="contact-detail">
+              <h2 class="main-heading">Feel free to keep in touch with us!</h2>
+              <ul class="contact">
+                <li><a class="contact-icon phone" href="tel:010-020-0860" title="">010-020-0860</a></li>
+                <li><a class="contact-icon mail" href="mailto:info@company.com" title="">
+                    info@company.com</a>
+                </li>
+                <li><a class="contact-icon website" href="https://www.company.com"
+                    title="www.company.com">www.company.com</a></li>
+              </ul>
+            </div>
+            <div class="contact-form">
+              <form action="#FIXME" method="get">
+                <div class="form-row">
+                  <div class="form-input">
+                    <input type="text" name="name" placeholder="Your Name">
+                  </div>
+                  <div class="form-input">
+                    <input type="number" name="phone" placeholder="Your Phone">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-input">
+                    <input type="email" name="email" placeholder="Your Email">
+                  </div>
+                  <div class="form-input">
+                    <input type="text" name="subject" placeholder="Subject">
+                  </div>
                 </div>
                 <div class="form-input">
-                  <input type="number" name="phone" placeholder="Your Phone">
+                  <textarea name="message" rows="10" placeholder="Message"></textarea>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-input">
-                  <input type="email" name="email" placeholder="Your Email">
-                </div>
-                <div class="form-input">
-                  <input type="text" name="subject" placeholder="Subject">
-                </div>
-              </div>
-              <div class="form-input">
-                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-              </div>
-              <input type="submit" name="send message" value="Send Message Now">
-            </form>
+                <button class="send-btn">Send Message Now</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -413,24 +375,20 @@
           <h3 class="follow-us">Follow Us</h3>
           <ul class="social-links">
             <li>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
-                <i class="fa fa-facebook" aria-hidden="true"></i>Facebook
+              <a class="social-icon facebook" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
-                <i class="fa fa-twitter" aria-hidden="true"></i>Twitter
+              <a class="social-icon twitter" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Linkedin">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin
+              <a class="social-icon linked" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" title="Linkedin">
               </a>
             </li>
             <li>
-              <a href="https://www.company.com" target="_blank" rel="noopener noreferrer" title="www.company.com">
-                <i class="fa fa-globe" aria-hidden="true"></i>www.company.com
-              </a>
+              <a class="social-icon domain" href="https://www.company.com" target="_blank" rel="noopener noreferrer" title="www.company.com">
+               </a>
             </li>
           </ul>
         </div>
