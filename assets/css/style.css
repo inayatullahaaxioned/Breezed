@@ -427,12 +427,19 @@ h1 a{
   .before-btn{
     font-size: 13px;
     text-transform: uppercase;
-    padding: 16px 34px;
+    padding: 13px 34px;
     background: #60B65B;
     border-radius: 30px;
     border: 2px solid transparent;
     color: #fff;
     margin-top: 30px;
+  }
+
+  .before-btn:hover{
+    background-color: #fff;
+    color: #60B65B;
+    border: 2px solid #60B65B;
+    transition: all .3s ease;
   }
 
   .before-btn::before{
@@ -487,7 +494,7 @@ h1 a{
 
   .feature-list h2{
     color: #202B38;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: .5px;
     text-transform: uppercase;
@@ -513,10 +520,14 @@ h1 a{
   .arrow-right{
     color: #202B38;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 20px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.5px;
+  }
+
+  .arrow-right:hover{
+    color: #60B65B;
   }
 
   .arrow-right::before{
@@ -617,7 +628,7 @@ h1 a{
   }
 
   .project-section .wrapper {
-      padding: 10% 0 12% 0;
+      padding: 6.5% 0 10.5% 0;
   }
 
   .project-flex{
@@ -650,9 +661,11 @@ h1 a{
     color: #9C9E95;
     text-transform: uppercase;
     font-size: 13px;
+    font-weight: 600;
   }
 
-  .project-anc.active{
+  a.active-anc,
+  .project-anc:hover{
     color: #76b96b;
   }
 
@@ -690,10 +703,13 @@ h1 a{
     font-size:17px ;
   }
 
-  .team-section .main-heading { text-transform: lowercase;}
+  .team-section .main-heading {
+    text-transform: lowercase;
+    font-size: 30px;
+  }
 
   .team-name , .designation{
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     color: #fff;
     font-weight: 500;
@@ -703,9 +719,10 @@ h1 a{
   .team-name{
     margin-top: 30px;
     letter-spacing: 1px;
+    font-weight: 600;
   }
   .designation{
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 13px;
   }
 
@@ -724,11 +741,12 @@ h1 a{
     display: inline-block;
     text-indent: -9999px;
   }
-  
+
+  .dot3,
   .dot:hover{
     transform: scale(1.15);
-    opacity: 0.7;
-  }
+    background-color: #9C9E95;
+  } 
 
   /* team styling ends here  */
 
@@ -769,6 +787,10 @@ h1 a{
     color: #000;
     display: flex;
     align-items: center;
+  }
+
+  .contact-icon:hover{
+    color: #56A352;
   }
 
   .contact-icon::before{
@@ -892,6 +914,11 @@ h1 a{
     .social-icon {
       text-indent: -9999px;
       display: inline-block;
+    }
+
+    .social-icon:hover::before{
+      color: #fff;
+      background: #56A352;
     }
   
     .social-icon::before {
