@@ -998,7 +998,10 @@ h1 a{
 @media only screen and (max-width: 1024px) {
   
   .logo { flex-basis: 34%; }
+  .newsletter-content { top: 11%; }
 
   }
+
+  /* media query for 1024 ends here  */
 
 
